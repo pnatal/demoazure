@@ -15,7 +15,7 @@ integer y = 428
 integer width = 1166
 integer height = 568
 boolean titlebar = true
-string title = "About"
+string title = "Dora Sistemas Brasil"
 boolean controlmenu = true
 windowtype windowtype = response!
 long backcolor = 79416533
@@ -73,7 +73,7 @@ string facename = "Tahoma"
 long textcolor = 16711680
 long backcolor = 79416533
 boolean enabled = false
-string text = "teste de aplicação"
+string text = "GitHub "
 alignment alignment = center!
 boolean focusrectangle = false
 end type
