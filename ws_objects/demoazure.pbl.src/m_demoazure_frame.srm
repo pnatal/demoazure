@@ -1,0 +1,1095 @@
+﻿$PBExportHeader$m_demoazure_frame.srm
+$PBExportComments$Generated MDI Frame Menu
+forward
+global type m_demoazure_frame from menu
+end type
+type m_file from menu within m_demoazure_frame
+end type
+type m_new from menu within m_file
+end type
+type m_sheet1 from menu within m_new
+end type
+type m_sheet2 from menu within m_new
+end type
+type m_sheet3 from menu within m_new
+end type
+type m_sheet4 from menu within m_new
+end type
+type m_sheet5 from menu within m_new
+end type
+type m_sheet6 from menu within m_new
+end type
+type m_sheet7 from menu within m_new
+end type
+type m_sheet8 from menu within m_new
+end type
+type m_sheet9 from menu within m_new
+end type
+type m_sheet10 from menu within m_new
+end type
+type m_new from menu within m_file
+m_sheet1 m_sheet1
+m_sheet2 m_sheet2
+m_sheet3 m_sheet3
+m_sheet4 m_sheet4
+m_sheet5 m_sheet5
+m_sheet6 m_sheet6
+m_sheet7 m_sheet7
+m_sheet8 m_sheet8
+m_sheet9 m_sheet9
+m_sheet10 m_sheet10
+end type
+type m_open from menu within m_file
+end type
+type m_close from menu within m_file
+end type
+type m_dash1 from menu within m_file
+end type
+type m_print from menu within m_file
+end type
+type m_print_query from menu within m_file
+end type
+type m_printersetup from menu within m_file
+end type
+type m_dash2 from menu within m_file
+end type
+type m_toolbars from menu within m_file
+end type
+type m_dash3 from menu within m_file
+end type
+type m_exit from menu within m_file
+end type
+type m_file from menu within m_demoazure_frame
+m_new m_new
+m_open m_open
+m_close m_close
+m_dash1 m_dash1
+m_print m_print
+m_print_query m_print_query
+m_printersetup m_printersetup
+m_dash2 m_dash2
+m_toolbars m_toolbars
+m_dash3 m_dash3
+m_exit m_exit
+end type
+type m_edit from menu within m_demoazure_frame
+end type
+type m_undo from menu within m_edit
+end type
+type m_dash5 from menu within m_edit
+end type
+type m_cut from menu within m_edit
+end type
+type m_copy from menu within m_edit
+end type
+type m_paste from menu within m_edit
+end type
+type m_clear from menu within m_edit
+end type
+type m_edit from menu within m_demoazure_frame
+m_undo m_undo
+m_dash5 m_dash5
+m_cut m_cut
+m_copy m_copy
+m_paste m_paste
+m_clear m_clear
+end type
+type m_window from menu within m_demoazure_frame
+end type
+type m_tilevertical from menu within m_window
+end type
+type m_tilehorizontal from menu within m_window
+end type
+type m_layer from menu within m_window
+end type
+type m_cascade from menu within m_window
+end type
+type m_dash6 from menu within m_window
+end type
+type m_arrangeicons from menu within m_window
+end type
+type m_window from menu within m_demoazure_frame
+m_tilevertical m_tilevertical
+m_tilehorizontal m_tilehorizontal
+m_layer m_layer
+m_cascade m_cascade
+m_dash6 m_dash6
+m_arrangeicons m_arrangeicons
+end type
+type m_help from menu within m_demoazure_frame
+end type
+type m_helpindex from menu within m_help
+end type
+type m_search from menu within m_help
+end type
+type m_dash4 from menu within m_help
+end type
+type m_aboutquickapp from menu within m_help
+end type
+type m_help from menu within m_demoazure_frame
+m_helpindex m_helpindex
+m_search m_search
+m_dash4 m_dash4
+m_aboutquickapp m_aboutquickapp
+end type
+global type m_demoazure_frame from menu
+m_file m_file
+m_edit m_edit
+m_window m_window
+m_help m_help
+end type
+end forward
+
+global type m_demoazure_frame from menu
+m_file m_file
+m_edit m_edit
+m_window m_window
+m_help m_help
+end type
+global m_demoazure_frame m_demoazure_frame
+
+on m_demoazure_frame.create
+m_demoazure_frame=this
+call super::create
+this.m_file=create m_file
+this.m_edit=create m_edit
+this.m_window=create m_window
+this.m_help=create m_help
+this.Item[UpperBound(this.Item)+1]=this.m_file
+this.Item[UpperBound(this.Item)+1]=this.m_edit
+this.Item[UpperBound(this.Item)+1]=this.m_window
+this.Item[UpperBound(this.Item)+1]=this.m_help
+end on
+
+on m_demoazure_frame.destroy
+call super::destroy
+destroy(this.m_file)
+destroy(this.m_edit)
+destroy(this.m_window)
+destroy(this.m_help)
+end on
+
+type m_file from menu within m_demoazure_frame
+m_new m_new
+m_open m_open
+m_close m_close
+m_dash1 m_dash1
+m_print m_print
+m_print_query m_print_query
+m_printersetup m_printersetup
+m_dash2 m_dash2
+m_toolbars m_toolbars
+m_dash3 m_dash3
+m_exit m_exit
+end type
+
+on m_file.create
+call super::create
+this.text = "&File"
+this.m_new=create m_new
+this.m_open=create m_open
+this.m_close=create m_close
+this.m_dash1=create m_dash1
+this.m_print=create m_print
+this.m_print_query=create m_print_query
+this.m_printersetup=create m_printersetup
+this.m_dash2=create m_dash2
+this.m_toolbars=create m_toolbars
+this.m_dash3=create m_dash3
+this.m_exit=create m_exit
+this.Item[UpperBound(this.Item)+1]=this.m_new
+this.Item[UpperBound(this.Item)+1]=this.m_open
+this.Item[UpperBound(this.Item)+1]=this.m_close
+this.Item[UpperBound(this.Item)+1]=this.m_dash1
+this.Item[UpperBound(this.Item)+1]=this.m_print
+this.Item[UpperBound(this.Item)+1]=this.m_print_query
+this.Item[UpperBound(this.Item)+1]=this.m_printersetup
+this.Item[UpperBound(this.Item)+1]=this.m_dash2
+this.Item[UpperBound(this.Item)+1]=this.m_toolbars
+this.Item[UpperBound(this.Item)+1]=this.m_dash3
+this.Item[UpperBound(this.Item)+1]=this.m_exit
+end on
+
+on m_file.destroy
+call super::destroy
+destroy(this.m_new)
+destroy(this.m_open)
+destroy(this.m_close)
+destroy(this.m_dash1)
+destroy(this.m_print)
+destroy(this.m_print_query)
+destroy(this.m_printersetup)
+destroy(this.m_dash2)
+destroy(this.m_toolbars)
+destroy(this.m_dash3)
+destroy(this.m_exit)
+end on
+
+type m_new from menu within m_file
+m_sheet1 m_sheet1
+m_sheet2 m_sheet2
+m_sheet3 m_sheet3
+m_sheet4 m_sheet4
+m_sheet5 m_sheet5
+m_sheet6 m_sheet6
+m_sheet7 m_sheet7
+m_sheet8 m_sheet8
+m_sheet9 m_sheet9
+m_sheet10 m_sheet10
+end type
+
+on m_new.create
+call super::create
+this.text = "&New"
+this.microhelp = "Open a new sheet"
+this.toolbaritemtext = "New,Open New Sheet"
+this.m_sheet1=create m_sheet1
+this.m_sheet2=create m_sheet2
+this.m_sheet3=create m_sheet3
+this.m_sheet4=create m_sheet4
+this.m_sheet5=create m_sheet5
+this.m_sheet6=create m_sheet6
+this.m_sheet7=create m_sheet7
+this.m_sheet8=create m_sheet8
+this.m_sheet9=create m_sheet9
+this.m_sheet10=create m_sheet10
+this.Item[UpperBound(this.Item)+1]=this.m_sheet1
+this.Item[UpperBound(this.Item)+1]=this.m_sheet2
+this.Item[UpperBound(this.Item)+1]=this.m_sheet3
+this.Item[UpperBound(this.Item)+1]=this.m_sheet4
+this.Item[UpperBound(this.Item)+1]=this.m_sheet5
+this.Item[UpperBound(this.Item)+1]=this.m_sheet6
+this.Item[UpperBound(this.Item)+1]=this.m_sheet7
+this.Item[UpperBound(this.Item)+1]=this.m_sheet8
+this.Item[UpperBound(this.Item)+1]=this.m_sheet9
+this.Item[UpperBound(this.Item)+1]=this.m_sheet10
+end on
+
+on m_new.destroy
+call super::destroy
+destroy(this.m_sheet1)
+destroy(this.m_sheet2)
+destroy(this.m_sheet3)
+destroy(this.m_sheet4)
+destroy(this.m_sheet5)
+destroy(this.m_sheet6)
+destroy(this.m_sheet7)
+destroy(this.m_sheet8)
+destroy(this.m_sheet9)
+destroy(this.m_sheet10)
+end on
+
+type m_sheet1 from menu within m_new
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet1.create
+call super::create
+this.tag = "<sheet1>"
+this.text = "<sheet1>"
+end on
+
+on m_sheet1.destroy
+call super::destroy
+end on
+
+type m_sheet2 from menu within m_new
+end type
+
+on m_sheet2.create
+call super::create
+this.tag = "<sheet2>"
+this.text = "<sheet2>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet2.destroy
+call super::destroy
+end on
+
+type m_sheet3 from menu within m_new
+end type
+
+on m_sheet3.create
+call super::create
+this.tag = "<sheet3>"
+this.text = "<sheet3>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet3.destroy
+call super::destroy
+end on
+
+type m_sheet4 from menu within m_new
+end type
+
+on m_sheet4.create
+call super::create
+this.tag = "<sheet4>"
+this.text = "<sheet4>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet4.destroy
+call super::destroy
+end on
+
+type m_sheet5 from menu within m_new
+end type
+
+on m_sheet5.create
+call super::create
+this.tag = "<sheet5>"
+this.text = "<sheet5>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet5.destroy
+call super::destroy
+end on
+
+type m_sheet6 from menu within m_new
+end type
+
+on m_sheet6.create
+call super::create
+this.tag = "<sheet6>"
+this.text = "<sheet6>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet6.destroy
+call super::destroy
+end on
+
+type m_sheet7 from menu within m_new
+end type
+
+on m_sheet7.create
+call super::create
+this.tag = "<sheet7>"
+this.text = "<sheet7>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet7.destroy
+call super::destroy
+end on
+
+type m_sheet8 from menu within m_new
+end type
+
+on m_sheet8.create
+call super::create
+this.tag = "<sheet8>"
+this.text = "<sheet8>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet8.destroy
+call super::destroy
+end on
+
+type m_sheet9 from menu within m_new
+end type
+
+on m_sheet9.create
+call super::create
+this.tag = "<sheet9>"
+this.text = "<sheet9>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet9.destroy
+call super::destroy
+end on
+
+type m_sheet10 from menu within m_new
+end type
+
+on m_sheet10.create
+call super::create
+this.tag = "<sheet10>"
+this.text = "<sheet10>"
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Pass the menu text to the ue_new event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_new ( this.Tag ) 
+end event
+
+on m_sheet10.destroy
+call super::destroy
+end on
+
+type m_open from menu within m_file
+end type
+
+on m_open.create
+call super::create
+this.text = "&Open...~tCtrl+O"
+this.shortcut = 335
+this.microhelp = "Open..."
+this.toolbaritemname = "Open!"
+this.toolbaritemtext = "Open,Open"
+end on
+
+on m_open.destroy
+call super::destroy
+end on
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger ue_open event
+//*-----------------------------------------------------------------*/
+If w_demoazure_frame.Event ue_open ( ) <> 1 Then
+	MessageBox ( "Menu Error", "No 'Open' logic defined.  Add logic to the ue_open event in w_demoazure_frame" ) 
+End If
+end event
+
+type m_close from menu within m_file
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger ue_close event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_close ( )
+end event
+
+on m_close.create
+call super::create
+this.text = "&Close~tCtrl+W"
+this.enabled = false
+this.shortcut = 343
+this.microhelp = "Close active sheet"
+end on
+
+on m_close.destroy
+call super::destroy
+end on
+
+type m_dash1 from menu within m_file
+end type
+
+on m_dash1.create
+call super::create
+this.text = "-"
+end on
+
+on m_dash1.destroy
+call super::destroy
+end on
+
+type m_print from menu within m_file
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger ue_print event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_print ( )
+end event
+
+on m_print.create
+call super::create
+this.visible = false
+this.text = "Print"
+this.enabled = false
+this.shortcut = 256
+this.microhelp = "Print active sheet"
+this.toolbaritemname = "Print!"
+this.toolbaritemtext = "Print"
+this.toolbaritemspace = 1
+end on
+
+on m_print.destroy
+call super::destroy
+end on
+
+type m_print_query from menu within m_file
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger ue_print event
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.Event ue_print_query ( )
+end event
+
+on m_print_query.create
+call super::create
+this.text = "&Print...~tCtrl+P"
+this.enabled = false
+this.shortcut = 336
+this.microhelp = "Print active sheet"
+this.toolbaritemvisible = false
+this.toolbaritemname = "Print!"
+this.toolbaritemtext = "Print"
+this.toolbaritemspace = 1
+end on
+
+on m_print_query.destroy
+call super::destroy
+end on
+
+type m_printersetup from menu within m_file
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Open Print Setup Dialog
+//*-----------------------------------------------------------------*/
+PrintSetup ( )
+end event
+
+on m_printersetup.create
+call super::create
+this.text = "Print Set&up..."
+this.microhelp = "Setup printer"
+end on
+
+on m_printersetup.destroy
+call super::destroy
+end on
+
+type m_dash2 from menu within m_file
+end type
+
+on m_dash2.create
+call super::create
+this.text = "-"
+end on
+
+on m_dash2.destroy
+call super::destroy
+end on
+
+type m_toolbars from menu within m_file
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Configure toolbars 
+//*-----------------------------------------------------------------*/
+OpenWithParm ( w_demoazure_toolbars, w_demoazure_frame )
+end event
+
+on m_toolbars.create
+call super::create
+this.text = "&Toolbars..."
+this.microhelp = "Configure toolbars"
+end on
+
+on m_toolbars.destroy
+call super::destroy
+end on
+
+type m_dash3 from menu within m_file
+end type
+
+on m_dash3.create
+call super::create
+this.text = "-"
+end on
+
+on m_dash3.destroy
+call super::destroy
+end on
+
+type m_exit from menu within m_file
+end type
+
+on clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Close the Frame and Exit
+//*-----------------------------------------------------------------*/
+Close ( w_demoazure_frame )
+end on
+
+on m_exit.create
+call super::create
+this.text = "E&xit"
+this.microhelp = "Exit program"
+this.toolbaritemname = "Exit!"
+this.toolbaritemtext = "Exit,Exit Application"
+this.toolbaritemspace = 1
+this.menuitemtype = menuitemtypeexit!
+end on
+
+on m_exit.destroy
+call super::destroy
+end on
+
+type m_edit from menu within m_demoazure_frame
+m_undo m_undo
+m_dash5 m_dash5
+m_cut m_cut
+m_copy m_copy
+m_paste m_paste
+m_clear m_clear
+end type
+
+on m_edit.create
+call super::create
+this.text = "&Edit"
+this.m_undo=create m_undo
+this.m_dash5=create m_dash5
+this.m_cut=create m_cut
+this.m_copy=create m_copy
+this.m_paste=create m_paste
+this.m_clear=create m_clear
+this.Item[UpperBound(this.Item)+1]=this.m_undo
+this.Item[UpperBound(this.Item)+1]=this.m_dash5
+this.Item[UpperBound(this.Item)+1]=this.m_cut
+this.Item[UpperBound(this.Item)+1]=this.m_copy
+this.Item[UpperBound(this.Item)+1]=this.m_paste
+this.Item[UpperBound(this.Item)+1]=this.m_clear
+end on
+
+on m_edit.destroy
+call super::destroy
+destroy(this.m_undo)
+destroy(this.m_dash5)
+destroy(this.m_cut)
+destroy(this.m_copy)
+destroy(this.m_paste)
+destroy(this.m_clear)
+end on
+
+type m_undo from menu within m_edit
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger the ue_undo event on the active sheet
+//*-----------------------------------------------------------------*/
+w_demoazure_basesheet lw_sheet
+
+lw_sheet = w_demoazure_frame.GetActiveSheet ( )
+
+If IsValid ( lw_sheet ) Then
+	lw_sheet.Event ue_Undo ( )
+End If
+end event
+
+on m_undo.create
+call super::create
+this.text = "&Undo~tCtrl+Z"
+this.enabled = false
+this.shortcut = 346
+this.microhelp = "Undo last operation"
+end on
+
+on m_undo.destroy
+call super::destroy
+end on
+
+type m_dash5 from menu within m_edit
+end type
+
+on m_dash5.create
+call super::create
+this.text = "-"
+end on
+
+on m_dash5.destroy
+call super::destroy
+end on
+
+type m_cut from menu within m_edit
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger the ue_cut event on the active sheet
+//*-----------------------------------------------------------------*/
+w_demoazure_basesheet lw_sheet
+
+lw_sheet = w_demoazure_frame.GetActiveSheet ( )
+
+If IsValid ( lw_sheet ) Then
+	lw_sheet.Event ue_Cut ( )
+End If
+end event
+
+on m_cut.create
+call super::create
+this.text = "Cu&t~tCtrl+X"
+this.enabled = false
+this.shortcut = 344
+this.microhelp = "Cut text to clipboard"
+end on
+
+on m_cut.destroy
+call super::destroy
+end on
+
+type m_copy from menu within m_edit
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger the ue_copy event on the active sheet
+//*-----------------------------------------------------------------*/
+w_demoazure_basesheet lw_sheet
+
+lw_sheet = w_demoazure_frame.GetActiveSheet ( )
+
+If IsValid ( lw_sheet ) Then
+	lw_sheet.Event ue_Copy ( )
+End If
+end event
+
+on m_copy.create
+call super::create
+this.text = "&Copy~tCtrl+C"
+this.enabled = false
+this.shortcut = 323
+this.microhelp = "Copy text to clipboard"
+end on
+
+on m_copy.destroy
+call super::destroy
+end on
+
+type m_paste from menu within m_edit
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger the ue_paste event on the active sheet
+//*-----------------------------------------------------------------*/
+w_demoazure_basesheet lw_sheet
+
+lw_sheet = w_demoazure_frame.GetActiveSheet ( )
+
+If IsValid ( lw_sheet ) Then
+	lw_sheet.Event ue_Paste ( )
+End If
+end event
+
+on m_paste.create
+call super::create
+this.text = "&Paste~tCtrl+V"
+this.enabled = false
+this.shortcut = 342
+this.microhelp = "Paste text from clipboard"
+end on
+
+on m_paste.destroy
+call super::destroy
+end on
+
+type m_clear from menu within m_edit
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Trigger the ue_clear event on the active sheet
+//*-----------------------------------------------------------------*/
+w_demoazure_basesheet lw_sheet
+
+lw_sheet = w_demoazure_frame.GetActiveSheet ( )
+
+If IsValid ( lw_sheet ) Then
+	lw_sheet.Event ue_Clear ( )
+End If
+end event
+
+on m_clear.create
+call super::create
+this.text = "Clear"
+this.enabled = false
+this.microhelp = "Clear text"
+end on
+
+on m_clear.destroy
+call super::destroy
+end on
+
+type m_window from menu within m_demoazure_frame
+m_tilevertical m_tilevertical
+m_tilehorizontal m_tilehorizontal
+m_layer m_layer
+m_cascade m_cascade
+m_dash6 m_dash6
+m_arrangeicons m_arrangeicons
+end type
+
+on m_window.create
+call super::create
+this.text = "&Window"
+this.m_tilevertical=create m_tilevertical
+this.m_tilehorizontal=create m_tilehorizontal
+this.m_layer=create m_layer
+this.m_cascade=create m_cascade
+this.m_dash6=create m_dash6
+this.m_arrangeicons=create m_arrangeicons
+this.Item[UpperBound(this.Item)+1]=this.m_tilevertical
+this.Item[UpperBound(this.Item)+1]=this.m_tilehorizontal
+this.Item[UpperBound(this.Item)+1]=this.m_layer
+this.Item[UpperBound(this.Item)+1]=this.m_cascade
+this.Item[UpperBound(this.Item)+1]=this.m_dash6
+this.Item[UpperBound(this.Item)+1]=this.m_arrangeicons
+end on
+
+on m_window.destroy
+call super::destroy
+destroy(this.m_tilevertical)
+destroy(this.m_tilehorizontal)
+destroy(this.m_layer)
+destroy(this.m_cascade)
+destroy(this.m_dash6)
+destroy(this.m_arrangeicons)
+end on
+
+type m_tilevertical from menu within m_window
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Tile sheets vertically
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.ArrangeSheets ( Tile! )
+end event
+
+on m_tilevertical.create
+call super::create
+this.text = "Tile &Vertical"
+this.enabled = false
+this.microhelp = "Arrange all as vertically tiled"
+end on
+
+on m_tilevertical.destroy
+call super::destroy
+end on
+
+type m_tilehorizontal from menu within m_window
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Tile sheets horizontally
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.ArrangeSheets ( TileHorizontal! )
+end event
+
+on m_tilehorizontal.create
+call super::create
+this.text = "Tile &Horizontal"
+this.enabled = false
+this.microhelp = "Arrange all as horizontally tiled"
+end on
+
+on m_tilehorizontal.destroy
+call super::destroy
+end on
+
+type m_layer from menu within m_window
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Layer sheets
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.ArrangeSheets ( Layer! )
+end event
+
+on m_layer.create
+call super::create
+this.text = "&Layer"
+this.enabled = false
+this.microhelp = "Arrange all as layered"
+end on
+
+on m_layer.destroy
+call super::destroy
+end on
+
+type m_cascade from menu within m_window
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Cascade sheets
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.ArrangeSheets ( Cascade! )
+end event
+
+on m_cascade.create
+call super::create
+this.text = "&Cascade"
+this.enabled = false
+this.microhelp = "Arrange all as cascaded"
+end on
+
+on m_cascade.destroy
+call super::destroy
+end on
+
+type m_dash6 from menu within m_window
+end type
+
+on m_dash6.create
+call super::create
+this.text = "-"
+end on
+
+on m_dash6.destroy
+call super::destroy
+end on
+
+type m_arrangeicons from menu within m_window
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Arrange sheet icons
+//*-----------------------------------------------------------------*/
+w_demoazure_frame.ArrangeSheets ( Icons! )
+end event
+
+on m_arrangeicons.create
+call super::create
+this.text = "Arrange &Icons"
+this.enabled = false
+this.microhelp = "Arrange all icons"
+end on
+
+on m_arrangeicons.destroy
+call super::destroy
+end on
+
+type m_help from menu within m_demoazure_frame
+m_helpindex m_helpindex
+m_search m_search
+m_dash4 m_dash4
+m_aboutquickapp m_aboutquickapp
+end type
+
+on m_help.create
+call super::create
+this.text = "&Help"
+this.shifttoright = true
+this.m_helpindex=create m_helpindex
+this.m_search=create m_search
+this.m_dash4=create m_dash4
+this.m_aboutquickapp=create m_aboutquickapp
+this.Item[UpperBound(this.Item)+1]=this.m_helpindex
+this.Item[UpperBound(this.Item)+1]=this.m_search
+this.Item[UpperBound(this.Item)+1]=this.m_dash4
+this.Item[UpperBound(this.Item)+1]=this.m_aboutquickapp
+end on
+
+on m_help.destroy
+call super::destroy
+destroy(this.m_helpindex)
+destroy(this.m_search)
+destroy(this.m_dash4)
+destroy(this.m_aboutquickapp)
+end on
+
+type m_helpindex from menu within m_help
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Display help contents (if uncommented)
+//*-----------------------------------------------------------------*/
+// ShowHelp ("myapp.hlp", Index!)
+end event
+
+on m_helpindex.create
+call super::create
+this.text = "Help &Index~tF1"
+this.enabled = false
+this.shortcut = 112
+this.microhelp = "Display Help index"
+end on
+
+on m_helpindex.destroy
+call super::destroy
+end on
+
+type m_search from menu within m_help
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Search for Help topic (if uncommented)
+//*-----------------------------------------------------------------*/
+// ShowHelp ("myapp.hlp", Keyword!, "")
+end event
+
+on m_search.create
+call super::create
+this.text = "&Search for Help on..."
+this.enabled = false
+this.microhelp = "Search for Help topic"
+end on
+
+on m_search.destroy
+call super::destroy
+end on
+
+type m_dash4 from menu within m_help
+end type
+
+on m_dash4.create
+call super::create
+this.text = "-"
+end on
+
+on m_dash4.destroy
+call super::destroy
+end on
+
+type m_aboutquickapp from menu within m_help
+end type
+
+event clicked;//*-----------------------------------------------------------------*/
+//*    clicked:  Open copyright response window
+//*-----------------------------------------------------------------*/
+Open ( w_demoazure_about ) 
+end event
+
+on m_aboutquickapp.create
+call super::create
+this.text = "&About..."
+this.microhelp = "Display ~"About~" window"
+this.menuitemtype = menuitemtypeabout!
+end on
+
+on m_aboutquickapp.destroy
+call super::destroy
+end on
+

@@ -1,0 +1,14 @@
+﻿$PBExportHeader$p_demoazure_exe.srj
+$PBExportComments$Generated Application Executable Project
+EXE:demoazure.exe,,0,0,1
+CMP:0,0,0,2,0,0
+COM:Appeon
+DES:Appeon Product File
+CPY:
+PRD:PowerBuilder Enterprise Series
+PVN:1,0,0,1
+PVS:1.0.0.1
+FVN:1,0,0,1
+FVS:1.0.0.1
+PBD:demoazure.pbl,,1
+ 

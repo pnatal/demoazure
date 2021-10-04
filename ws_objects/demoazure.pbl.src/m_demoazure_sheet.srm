@@ -1,0 +1,479 @@
+﻿$PBExportHeader$m_demoazure_sheet.srm
+$PBExportComments$Generated MDI Sheet Menu
+forward
+global type m_demoazure_sheet from m_demoazure_frame
+end type
+end forward
+
+global type m_demoazure_sheet from m_demoazure_frame
+end type
+global m_demoazure_sheet m_demoazure_sheet
+
+on m_demoazure_sheet.create
+m_demoazure_sheet=this
+call super::create
+end on
+
+on m_demoazure_sheet.destroy
+call super::destroy
+end on
+
+type m_file from m_demoazure_frame`m_file within m_demoazure_sheet
+end type
+
+on m_file.create
+call super::create
+end on
+
+on m_file.destroy
+call super::destroy
+end on
+
+type m_new from m_demoazure_frame`m_new within m_file
+end type
+
+on m_new.create
+call super::create
+end on
+
+on m_new.destroy
+call super::destroy
+end on
+
+type m_sheet1 from m_demoazure_frame`m_sheet1 within m_new
+end type
+
+on m_sheet1.create
+call super::create
+end on
+
+on m_sheet1.destroy
+call super::destroy
+end on
+
+type m_sheet2 from m_demoazure_frame`m_sheet2 within m_new
+end type
+
+on m_sheet2.create
+call super::create
+end on
+
+on m_sheet2.destroy
+call super::destroy
+end on
+
+type m_sheet3 from m_demoazure_frame`m_sheet3 within m_new
+end type
+
+on m_sheet3.create
+call super::create
+end on
+
+on m_sheet3.destroy
+call super::destroy
+end on
+
+type m_sheet4 from m_demoazure_frame`m_sheet4 within m_new
+end type
+
+on m_sheet4.create
+call super::create
+end on
+
+on m_sheet4.destroy
+call super::destroy
+end on
+
+type m_sheet5 from m_demoazure_frame`m_sheet5 within m_new
+end type
+
+on m_sheet5.create
+call super::create
+end on
+
+on m_sheet5.destroy
+call super::destroy
+end on
+
+type m_sheet6 from m_demoazure_frame`m_sheet6 within m_new
+end type
+
+on m_sheet6.create
+call super::create
+end on
+
+on m_sheet6.destroy
+call super::destroy
+end on
+
+type m_sheet7 from m_demoazure_frame`m_sheet7 within m_new
+end type
+
+on m_sheet7.create
+call super::create
+end on
+
+on m_sheet7.destroy
+call super::destroy
+end on
+
+type m_sheet8 from m_demoazure_frame`m_sheet8 within m_new
+end type
+
+on m_sheet8.create
+call super::create
+end on
+
+on m_sheet8.destroy
+call super::destroy
+end on
+
+type m_sheet9 from m_demoazure_frame`m_sheet9 within m_new
+end type
+
+on m_sheet9.create
+call super::create
+end on
+
+on m_sheet9.destroy
+call super::destroy
+end on
+
+type m_sheet10 from m_demoazure_frame`m_sheet10 within m_new
+end type
+
+on m_sheet10.create
+call super::create
+end on
+
+on m_sheet10.destroy
+call super::destroy
+end on
+
+type m_open from m_demoazure_frame`m_open within m_file
+end type
+
+on m_open.create
+call super::create
+end on
+
+on m_open.destroy
+call super::destroy
+end on
+
+type m_close from m_demoazure_frame`m_close within m_file
+end type
+
+on m_close.create
+call super::create
+this.enabled = true
+end on
+
+on m_close.destroy
+call super::destroy
+end on
+
+type m_dash1 from m_demoazure_frame`m_dash1 within m_file
+end type
+
+on m_dash1.create
+call super::create
+end on
+
+on m_dash1.destroy
+call super::destroy
+end on
+
+type m_print from m_demoazure_frame`m_print within m_file
+end type
+
+on m_print.create
+call super::create
+this.enabled = true
+end on
+
+on m_print.destroy
+call super::destroy
+end on
+
+type m_print_query from m_demoazure_frame`m_print_query within m_file
+end type
+
+on m_print_query.create
+call super::create
+this.enabled = true
+end on
+
+on m_print_query.destroy
+call super::destroy
+end on
+
+type m_printersetup from m_demoazure_frame`m_printersetup within m_file
+end type
+
+on m_printersetup.create
+call super::create
+end on
+
+on m_printersetup.destroy
+call super::destroy
+end on
+
+type m_dash2 from m_demoazure_frame`m_dash2 within m_file
+end type
+
+on m_dash2.create
+call super::create
+end on
+
+on m_dash2.destroy
+call super::destroy
+end on
+
+type m_toolbars from m_demoazure_frame`m_toolbars within m_file
+end type
+
+on m_toolbars.create
+call super::create
+end on
+
+on m_toolbars.destroy
+call super::destroy
+end on
+
+type m_dash3 from m_demoazure_frame`m_dash3 within m_file
+end type
+
+on m_dash3.create
+call super::create
+end on
+
+on m_dash3.destroy
+call super::destroy
+end on
+
+type m_exit from m_demoazure_frame`m_exit within m_file
+end type
+
+on m_exit.create
+call super::create
+end on
+
+on m_exit.destroy
+call super::destroy
+end on
+
+type m_edit from m_demoazure_frame`m_edit within m_demoazure_sheet
+end type
+
+on m_edit.create
+call super::create
+end on
+
+on m_edit.destroy
+call super::destroy
+end on
+
+type m_undo from m_demoazure_frame`m_undo within m_edit
+end type
+
+on m_undo.create
+call super::create
+end on
+
+on m_undo.destroy
+call super::destroy
+end on
+
+type m_dash5 from m_demoazure_frame`m_dash5 within m_edit
+end type
+
+on m_dash5.create
+call super::create
+end on
+
+on m_dash5.destroy
+call super::destroy
+end on
+
+type m_cut from m_demoazure_frame`m_cut within m_edit
+end type
+
+on m_cut.create
+call super::create
+end on
+
+on m_cut.destroy
+call super::destroy
+end on
+
+type m_copy from m_demoazure_frame`m_copy within m_edit
+end type
+
+on m_copy.create
+call super::create
+end on
+
+on m_copy.destroy
+call super::destroy
+end on
+
+type m_paste from m_demoazure_frame`m_paste within m_edit
+end type
+
+on m_paste.create
+call super::create
+end on
+
+on m_paste.destroy
+call super::destroy
+end on
+
+type m_clear from m_demoazure_frame`m_clear within m_edit
+end type
+
+on m_clear.create
+call super::create
+end on
+
+on m_clear.destroy
+call super::destroy
+end on
+
+type m_window from m_demoazure_frame`m_window within m_demoazure_sheet
+end type
+
+on m_window.create
+call super::create
+end on
+
+on m_window.destroy
+call super::destroy
+end on
+
+type m_tilevertical from m_demoazure_frame`m_tilevertical within m_window
+end type
+
+on m_tilevertical.create
+call super::create
+this.enabled = true
+end on
+
+on m_tilevertical.destroy
+call super::destroy
+end on
+
+type m_tilehorizontal from m_demoazure_frame`m_tilehorizontal within m_window
+end type
+
+on m_tilehorizontal.create
+call super::create
+this.enabled = true
+end on
+
+on m_tilehorizontal.destroy
+call super::destroy
+end on
+
+type m_layer from m_demoazure_frame`m_layer within m_window
+end type
+
+on m_layer.create
+call super::create
+this.enabled = true
+end on
+
+on m_layer.destroy
+call super::destroy
+end on
+
+type m_cascade from m_demoazure_frame`m_cascade within m_window
+end type
+
+on m_cascade.create
+call super::create
+this.enabled = true
+end on
+
+on m_cascade.destroy
+call super::destroy
+end on
+
+type m_dash6 from m_demoazure_frame`m_dash6 within m_window
+end type
+
+on m_dash6.create
+call super::create
+end on
+
+on m_dash6.destroy
+call super::destroy
+end on
+
+type m_arrangeicons from m_demoazure_frame`m_arrangeicons within m_window
+end type
+
+on m_arrangeicons.create
+call super::create
+this.enabled = true
+end on
+
+on m_arrangeicons.destroy
+call super::destroy
+end on
+
+type m_help from m_demoazure_frame`m_help within m_demoazure_sheet
+end type
+
+on m_help.create
+call super::create
+end on
+
+on m_help.destroy
+call super::destroy
+end on
+
+type m_helpindex from m_demoazure_frame`m_helpindex within m_help
+end type
+
+on m_helpindex.create
+call super::create
+end on
+
+on m_helpindex.destroy
+call super::destroy
+end on
+
+type m_search from m_demoazure_frame`m_search within m_help
+end type
+
+on m_search.create
+call super::create
+end on
+
+on m_search.destroy
+call super::destroy
+end on
+
+type m_dash4 from m_demoazure_frame`m_dash4 within m_help
+end type
+
+on m_dash4.create
+call super::create
+end on
+
+on m_dash4.destroy
+call super::destroy
+end on
+
+type m_aboutquickapp from m_demoazure_frame`m_aboutquickapp within m_help
+end type
+
+on m_aboutquickapp.create
+call super::create
+end on
+
+on m_aboutquickapp.destroy
+call super::destroy
+end on
+
