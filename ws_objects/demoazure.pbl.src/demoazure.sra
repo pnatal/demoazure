@@ -22,7 +22,7 @@ long richtexteditx64type = 3
 long richtexteditversion = 1
 string richtexteditkey = ""
 string appicon = ""
-string appruntimeversion = "21.0.0.1288"
+string appruntimeversion = "21.0.0.1311"
 boolean manualsession = false
 boolean unsupportedapierror = false
 end type
